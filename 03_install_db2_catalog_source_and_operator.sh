@@ -2,18 +2,6 @@
 
 # From https://www.ibm.com/docs/en/db2/11.5?topic=operator-installing-from-command-line
 
-# Example DB2 CASE file info
-# https://github.com/IBM/cloud-pak/raw/master/repo/case/ibm-db2uoperator/5.1.4/ibm-db2uoperator-5.1.4.tgz
-
-# Set up environment variables
-export CASE_NAME=ibm-db2uoperator
-export CASE_VERSION=5.1.4
-export OFFLINECASE=/tmp/case
-export CASEPATH="https://github.com/IBM/cloud-pak/raw/master/repo/case"
-export OFFLINECASE=${OFFLINECASE}/${CASE_NAME}
-export CASE_ARCHIVE=${CASE_NAME}-${CASE_VERSION}.tgz
-export NS=cp4ba
-
 oc new-project ${NS}
 
 # Create a directory to save the CASE bundle to a local directory:
