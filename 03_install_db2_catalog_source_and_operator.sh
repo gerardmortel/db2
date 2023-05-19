@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# From https://github.com/IBM/cloud-pak-cli
 # Download cloudctl
 curl -L https://github.com/IBM/cloud-pak-cli/releases/latest/download/cloudctl-linux-amd64.tar.gz -o cloudctl-linux-amd64.tar.gz
 curl -L https://github.com/IBM/cloud-pak-cli/releases/latest/download/cloudctl-linux-amd64.tar.gz.sig -o cloudctl-linux-amd64.tar.gz.sig
