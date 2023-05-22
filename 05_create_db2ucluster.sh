@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Create the db2_cr.yaml.  Substitute the NS variable defined in 02_setup_env.sh
 cat << EOF > db2_cr.yaml
 apiVersion: db2u.databases.ibm.com/v1
 kind: Db2uCluster

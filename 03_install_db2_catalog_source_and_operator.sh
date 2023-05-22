@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# From https://github.com/IBM/cloud-pak-cli
+#################################################
+### From https://github.com/IBM/cloud-pak-cli ###
+#################################################
+
 # Download cloudctl
 curl -L https://github.com/IBM/cloud-pak-cli/releases/latest/download/cloudctl-linux-amd64.tar.gz -o cloudctl-linux-amd64.tar.gz
 curl -L https://github.com/IBM/cloud-pak-cli/releases/latest/download/cloudctl-linux-amd64.tar.gz.sig -o cloudctl-linux-amd64.tar.gz.sig
@@ -11,8 +14,11 @@ tar -xvf cloudctl-linux-amd64.tar.gz
 # Copy cloudctl to /usr/bin directory which in the PATH and rename to cloudctl
 cp cloudctl-linux-amd64 /usr/bin/cloudctl
 
-# From https://www.ibm.com/docs/en/db2/11.5?topic=operator-installing-from-command-line
+#############################################################################################
+### From https://www.ibm.com/docs/en/db2/11.5?topic=operator-installing-from-command-line ###
+#############################################################################################
 
+# Create a project
 oc new-project ${NS}
 
 # Create a directory to save the CASE bundle to a local directory:
