@@ -1,5 +1,6 @@
 # Install DB2 on OpenShift on Fyre
 # https://github.ibm.com/gmortel/db2
+# From https://www.ibm.com/docs/en/db2/11.5?topic=operator-installing-from-command-line
 
 1. ssh into the infrastructure node as root (e.g. ssh root@api.slavers.cp.fyre.ibm.com)
 2. yum install -y git
