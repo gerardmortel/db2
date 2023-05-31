@@ -12,8 +12,11 @@ The purpose of this repo is to install the DB2 operator and create a DB2 databas
 
 # Instructions
 1. ssh into the infrastructure node as root (e.g. ssh root@api.slavers.cp.fyre.ibm.com)
-2. yum install -y git
-3. git clone https://github.com/gerardmortel/db2.git
-4. cd db2
-5. Put your values for API_KEY_GENERATED, USER_EMAIL, NS and CASE_VERSION inside file 02_setup_env.sh
-6. ./01_driver.sh
+2. yum install -y git unzip
+3. cd
+4. wget https://github.com/gerardmortel/db2/archive/refs/heads/main.zip
+5. unzip main.zip
+6. git clone https://github.com/gerardmortel/db2.git
+7. cd db2
+8. Put your values for API_KEY_GENERATED, USER_EMAIL, NS and CASE_VERSION inside file 02_setup_env.sh
+9. ./01_driver.sh
