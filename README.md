@@ -16,6 +16,7 @@ The purpose of this repo is to install the DB2 operator and create a DB2 databas
 3. cd
 4. wget https://github.com/gerardmortel/db2/archive/refs/heads/main.zip
 5. unzip main.zip
-6. cd db2
-7. Put your values for API_KEY_GENERATED, USER_EMAIL, NS and CASE_VERSION inside file 02_setup_env.sh
-8. ./01_driver.sh
+6. rm -f main.zip
+7. cd db2-main
+8. Put your values for API_KEY_GENERATED, USER_EMAIL, NS and CASE_VERSION inside file 02_setup_env.sh
+9. ./01_driver.sh
