@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Check if db2ucluster pod is up every 10 seconds
+# Check if db2ucluster pod is running and ready every 10 seconds
 oc project ${NS}
 while [ true ]
 do
-  oc get pods | grep "c-db2ucluster-cp4ba-db2u-0" | grep "1/1"
+  oc get pods | grep "c-db2ucluster-cp4ba-db2u-0" | grep "Running" | grep "1/1"
   if [ $? -eq 0 ]; then
     echo "=============================================================================="
     echo "=================== db2ucluster IS available. ================================"
@@ -25,6 +25,8 @@ oc exec -it c-db2ucluster-cp4ba-db2u-0 -- bash
 cd /tmp
 tar -xvf db2_FN_BAW.tar
 chmod +x *.sh
+
+# Run the db2 create databases script, keep a log file of output
 su - db2inst1
 cd /tmp
 ./create_db.sh | tee create_db.log
