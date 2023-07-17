@@ -18,15 +18,20 @@ do
 done
 
 # Copy db2 tar file to db2ucluster
-oc cp db2_FN_BAW.tar c-db2ucluster-cp4ba-db2u-0:/tmp/
+# oc cp -c db2u db2_FN_BAW.tar c-db2ucluster-cp4ba-db2u-0:/tmp/
 
-# Exec into db2ucluster pod and untar db scripts
-oc exec -it c-db2ucluster-cp4ba-db2u-0 -- bash
-cd /tmp
-tar -xvf db2_FN_BAW.tar
-chmod +x *.sh
+# # Exec into db2ucluster pod and untar db scripts
+# oc exec -it c-db2ucluster-cp4ba-db2u-0 -- bash
+# cd /tmp
+# tar -xvf db2_FN_BAW.tar
+# chmod +x *.sh
 
-# Run the db2 create databases script, keep a log file of output
-su - db2inst1
-cd /tmp
-./create_db.sh | tee create_db.log
+# # Run the db2 create databases script, keep a log file of output
+# su - db2inst1
+# cd /tmp
+# ./create_db.sh | tee create_db.log
+
+
+## Notes
+# oc exec c-db2ucluster-cp4ba-db2u-0 -- tar -xvf /tmp/db2_FN_BAW.tar
+# oc exec c-db2ucluster-cp4ba-db2u-0 -- chmod +x  /tmp/*.sh
