@@ -25,11 +25,13 @@ The purpose of this repo is to install the DB2 operator and create a DB2 databas
 10. ./01_driver.sh
 
 #11. oc cp -c db2u db2_FN_BAW.tar c-db2ucluster-cp4ba-db2u-0:/tmp/
+
 11. oc cp -c db2u db2_ODM.tar c-db2ucluster-cp4ba-db2u-0:/tmp/
 12. oc exec -it c-db2ucluster-cp4ba-db2u-0 -- bash
 13. cd /tmp
 
 #14. tar -xvf db2_FN_BAW.tar
+
 14. tar -xvf db2_ODM.tar
 15. chmod +x *.sh
 16. su - db2inst1
