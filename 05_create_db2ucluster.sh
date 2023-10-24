@@ -43,7 +43,7 @@ spec:
         resources:
           requests:
             storage: 50Gi
-        storageClassName: nfs-managed-storage
+        storageClassName: ${STORAGECLASS}
     - type: template
       name: data
       spec:
@@ -52,7 +52,7 @@ spec:
         resources:
           requests:
             storage: 100Gi
-        storageClassName: nfs-managed-storage
+        storageClassName: ${STORAGECLASS}
   size: 1
   podConfig:
     db2u:
