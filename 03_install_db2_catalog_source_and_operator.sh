@@ -12,7 +12,8 @@ curl -L https://github.com/IBM/cloud-pak-cli/releases/latest/download/cloudctl-l
 tar -xvf cloudctl-linux-amd64.tar.gz
 
 # Copy cloudctl to /usr/bin directory which in the PATH and rename to cloudctl
-cp cloudctl-linux-amd64 /usr/bin/cloudctl
+mkdir -p ${HOME}/bin
+cp cloudctl-linux-amd64 ${HOME}/bin/cloudctl
 
 #############################################################################################
 ### From https://www.ibm.com/docs/en/db2/11.5?topic=operator-installing-from-command-line ###
