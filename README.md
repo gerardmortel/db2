@@ -9,7 +9,7 @@ The purpose of this repo is to install the DB2 operator and create a DB2 databas
 
 # Prerequisites
 1. OpenShift cluster on Fyre
-2. NFS Storage configured https://github.com/gerardmortel/nfs-storage-for-fyre
+2. NFS Storage (For Fyre, try https://github.com/gerardmortel/nfs-storage-for-fyre)
 3. Entitlement key https://myibm.ibm.com/products-services/containerlibrary
 
 # Instructions
@@ -17,23 +17,24 @@ The purpose of this repo is to install the DB2 operator and create a DB2 databas
 2. yum install -y git unzip
 3. cd
 4. rm -f main.zip
-5. wget https://github.com/gerardmortel/db2/archive/refs/heads/main.zip
-6. unzip main.zip
-7. rm -f main.zip
-8. cd db2-main
-9. STOP! Put your values for API_KEY_GENERATED, USER_EMAIL, NS and CASE_VERSION inside file 02_setup_env.sh
-10. ./01_driver.sh
+5. rm -f db2-main
+6. wget https://github.com/gerardmortel/db2/archive/refs/heads/main.zip
+7. unzip main.zip
+8. rm -f main.zip
+9. cd db2-main
+10. STOP! Put your values for API_KEY_GENERATED, USER_EMAIL, NS and CASE_VERSION inside file 02_setup_env.sh
+11. ./01_driver.sh
 
-#11. oc cp -c db2u db2_FN_BAW.tar c-db2ucluster-cp4ba-db2u-0:/tmp/
+#12. oc cp -c db2u db2_FN_BAW.tar c-db2ucluster-cp4ba-db2u-0:/tmp/
 
-11. oc cp -c db2u db2_ODM.tar c-db2ucluster-cp4ba-db2u-0:/tmp/
-12. oc exec -it c-db2ucluster-cp4ba-db2u-0 -- bash
-13. cd /tmp
+12. oc cp -c db2u db2_ODM.tar c-db2ucluster-cp4ba-db2u-0:/tmp/
+13. oc exec -it c-db2ucluster-cp4ba-db2u-0 -- bash
+14. cd /tmp
 
-#14. tar -xvf db2_FN_BAW.tar
+#15. tar -xvf db2_FN_BAW.tar
 
-14. tar -xvf db2_ODM.tar
-15. chmod +x *.sh
-16. su - db2inst1
-17. cd /tmp
-18. ./create_db.sh | tee create_db.log
+15. tar -xvf db2_ODM.tar
+16. chmod +x *.sh
+17. su - db2inst1
+18. cd /tmp
+19. ./create_db.sh | tee create_db.log
