@@ -17,7 +17,7 @@ The purpose of this repo is to install the DB2 operator and create a DB2 databas
 2. yum install -y git unzip
 3. cd
 4. rm -f main.zip
-5. rm -f db2-main
+5. rm -rf db2-main
 6. wget https://github.com/gerardmortel/db2/archive/refs/heads/main.zip
 7. unzip main.zip
 8. rm -f main.zip
