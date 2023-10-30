@@ -22,7 +22,7 @@ The purpose of this repo is to install the DB2 operator and create a DB2 databas
 7. unzip main.zip
 8. rm -f main.zip
 9. cd db2-main
-10. STOP! Put your values for API_KEY_GENERATED, USER_EMAIL, NS and CASE_VERSION inside file 02_setup_env.sh
+10. STOP! Put your values for variables inside file 02_setup_env.sh
 11. ./01_driver.sh
 
 #12. oc cp -c db2u db2_FN_BAW.tar c-db2ucluster-cp4ba-db2u-0:/tmp/
