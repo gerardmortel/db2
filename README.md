@@ -5,7 +5,7 @@
 https://www.ibm.com/docs/en/db2/11.5?topic=operator-installing-from-command-line
 
 # Purpose
-The purpose of this repo is to install the DB2 operator and create a DB2 database on OpenShift on IBM Fyre.
+The purpose of this repo is to install the DB2 operator and create a DB2 database on OpenShift on IBM Fyre or Techzone
 
 # Prerequisites
 1. OpenShift cluster on Fyre or Techzone
