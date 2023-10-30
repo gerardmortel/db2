@@ -10,7 +10,7 @@ export STORAGECLASS="" # managed-nfs-storage
 # https://github.com/IBM/cloud-pak/raw/master/repo/case/ibm-db2uoperator/5.1.4/ibm-db2uoperator-5.1.4.tgz
 export CASE_NAME="" # ibm-db2uoperator
 export CASE_VERSION="" # 5.1.4
-export OFFLINECASE="" #/tmp/case
+export OFFLINECASE="" # /tmp/case
 export CASEPATH="" # https://github.com/IBM/cloud-pak/raw/master/repo/case
 export OFFLINECASE=${OFFLINECASE}/${CASE_NAME}
 export CASE_ARCHIVE=${CASE_NAME}-${CASE_VERSION}.tgz
