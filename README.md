@@ -1,4 +1,4 @@
-# Install DB2 on OpenShift on Fyre
+# Install DB2 on OpenShift on Fyre or Techzone
 # https://github.ibm.com/gmortel/db2
 
 # Resources used to create this
@@ -8,7 +8,7 @@ https://www.ibm.com/docs/en/db2/11.5?topic=operator-installing-from-command-line
 The purpose of this repo is to install the DB2 operator and create a DB2 database on OpenShift on IBM Fyre.
 
 # Prerequisites
-1. OpenShift cluster on Fyre
+1. OpenShift cluster on Fyre or Techzone
 2. NFS Storage (For Fyre, try https://github.com/gerardmortel/nfs-storage-for-fyre)
 3. Entitlement key https://myibm.ibm.com/products-services/containerlibrary
 
