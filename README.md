@@ -2,7 +2,7 @@
 # https://github.ibm.com/gmortel/db2
 
 # Resources used to create this
-https://www.ibm.com/docs/en/db2/11.5?topic=operator-installing-from-command-line
+1. [Installing the Db2 Operator from the command line](https://www.ibm.com/docs/en/db2/11.5?topic=operator-installing-from-command-line)
 
 # Purpose
 The purpose of this repo is to install the DB2 operator and create a DB2 database on OpenShift on IBM Fyre or Techzone
