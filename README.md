@@ -1,5 +1,5 @@
 # Install DB2 on OpenShift on Fyre or Techzone
-# https://github.ibm.com/gmortel/db2
+[https://github.ibm.com/gmortel/db2](https://github.ibm.com/gmortel/db2)
 
 # Resources used to create this
 1. [Installing the Db2 Operator from the command line](https://www.ibm.com/docs/en/db2/11.5?topic=operator-installing-from-command-line)
@@ -13,7 +13,7 @@ The purpose of this repo is to install the DB2 operator and create a DB2 databas
 3. Entitlement key https://myibm.ibm.com/products-services/containerlibrary
 
 # Instructions
-1. ssh into the infrastructure node as root (e.g. ssh root@api.slavers.cp.fyre.ibm.com)
+1. ssh into the infrastructure node as root (e.g. ssh root@api.bravers.cp.fyre.ibm.com)
 2. yum install -y git unzip
 3. cd
 4. rm -f main.zip
